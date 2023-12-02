@@ -1,0 +1,8 @@
+{
+  "name": "html5-css-boilerplate",
+  "version": "1.0.0",
+  "description": "HTML5/CSS Boilerplate with HTMLHint and StyleLint",
+  "main": "",
+  "author": "Artem Darbinyan",
+  "license": "ISC"
+}
