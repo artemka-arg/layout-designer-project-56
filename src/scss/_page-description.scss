@@ -1,0 +1,66 @@
+#page-description {
+  background-image: url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.description-container {
+  padding-top: 25px;
+  padding-bottom: 200px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  text-align: center;
+
+  .hero-description {
+    margin-top: 32px;
+  }
+
+  .form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    max-width: 570px;
+
+    input {
+      box-sizing: border-box;
+      flex-grow: 1;
+      min-width: 270px;
+      min-height: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+      font-size: 14px;
+      color: #fff;
+      background-color: transparent;
+      border: 2px solid $text-color;
+      border-radius: 3px;
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    &-button {
+      width: 100%;
+      background-color: $green;
+      border: none;
+    }
+  }
+}
+
+@media (max-width: 414.98px) {
+  .hero-section {
+    margin-top: 78px;
+
+    .hero-description {
+      margin-top: 16px;
+    }
+  }
+}

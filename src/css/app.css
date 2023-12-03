@@ -1,0 +1,247 @@
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-weight: 500;
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #08020d;
+}
+
+h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 120px 0;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+}
+.header .nav {
+  height: -moz-max-content;
+  height: max-content;
+}
+.header .nav-list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.header .nav-link {
+  display: block;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #cacaca;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header .nav-link-active {
+  color: white;
+}
+.header .search {
+  height: 25px;
+  margin-left: auto;
+}
+.header .search-input {
+  box-sizing: border-box;
+  width: 248px;
+  height: 25px;
+  padding: 5px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #3c3b3d;
+  border: none;
+  border-radius: 50px;
+}
+.header .search-input::-moz-placeholder {
+  color: #757575;
+  text-transform: uppercase;
+}
+.header .search-input::placeholder {
+  color: #757575;
+  text-transform: uppercase;
+}
+
+.logo {
+  height: -moz-max-content;
+  height: max-content;
+  margin-right: 90px;
+}
+.logo-link {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+.logo-img {
+  width: 24px;
+}
+.logo-text {
+  font: normal 11px/1.5 Roboto, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+}
+
+.button {
+  box-sizing: content-box;
+  height: 15px;
+  padding: 20px 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 414.98px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header .logo {
+    margin: 0 0 17px;
+  }
+  .header .nav {
+    margin-bottom: 18px;
+  }
+  .header .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .header .nav-list li:not(:last-child) {
+    margin-bottom: 3px;
+  }
+  .header .nav-link {
+    height: 13px;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .header .search {
+    margin-left: 0;
+  }
+  .header .search-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 25px;
+  }
+}
+#page-description {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.description-container {
+  padding-top: 25px;
+  padding-bottom: 200px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  text-align: center;
+}
+.hero-section .hero-description {
+  margin-top: 32px;
+}
+.hero-section .form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  max-width: 570px;
+}
+.hero-section .form input {
+  box-sizing: border-box;
+  flex-grow: 1;
+  min-width: 270px;
+  min-height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #cacaca;
+  border-radius: 3px;
+}
+.hero-section .form input::-moz-placeholder {
+  color: #fff;
+}
+.hero-section .form input::placeholder {
+  color: #fff;
+}
+.hero-section .form-button {
+  width: 100%;
+  background-color: #34c176;
+  border: none;
+}
+
+@media (max-width: 414.98px) {
+  .hero-section {
+    margin-top: 78px;
+  }
+  .hero-section .hero-description {
+    margin-top: 16px;
+  }
+}/*# sourceMappingURL=app.css.map */

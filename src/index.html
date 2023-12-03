@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портал «Music Box» | @artemka-arg</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портал «Music Box» | @artemka-arg</title>
+
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    
+  <section id="page-description">
+    <div class="container description-container">
+      <header class="header">
+        <div class="logo">
+          <a href="/src/index.html" class="logo-link">
+            <img src="images/logo.svg" alt="Логотип Music Box" class="logo-img">
+            <span class="logo-text">Music Box</span>
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li>
+              <a href="#" class="nav-link nav-link-active">Главная</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Каталог</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Исполнители</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <form action="#" class="search">
+          <input class="search-input" type="text" placeholder="Поиск...">
+        </form>
+      </header>
+      <section class="hero-section">
+        <h1>Онлайн музыка где угодно</h1>
+        <h2>без ограничений</h2>
+        <p class="hero-description">
+          Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки
+        </p>
+        <form class="form" action="#">
+          <label class="sr-only" for="name">Ваше имя</label>
+          <input id="name" placeholder="Имя" type="text">
+          <label class="sr-only" for="email">Ваша электронная почта</label>
+          <input id="email" placeholder="Email" type="email">
+          <button class="button form-button">Получить доступ</button>
+        </form>
+      </section>
+    </div>
+  </section>
 </body>
 </html>
