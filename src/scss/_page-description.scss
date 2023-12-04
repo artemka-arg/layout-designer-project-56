@@ -1,4 +1,4 @@
-#page-description {
+.description-section {
   background-image: url('../images/banner.png');
   background-position: center;
   background-size: cover;
@@ -49,6 +49,7 @@
 
     &-button {
       width: 100%;
+      height: 17px;
       background-color: $green;
       border: none;
     }
