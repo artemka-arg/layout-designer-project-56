@@ -149,6 +149,14 @@ h3 {
   border: 0;
 }
 
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
 @media (max-width: 414.98px) {
   h1 {
     font-size: 30px;
