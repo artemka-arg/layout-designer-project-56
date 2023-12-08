@@ -26,6 +26,7 @@ h1 {
   margin: 0;
   font-weight: bold;
   font-size: 60px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -33,12 +34,14 @@ h2 {
   margin: 0;
   font-weight: bold;
   font-size: 38px;
+  text-align: center;
   text-transform: uppercase;
 }
 
 h3 {
   margin: 0;
   font-weight: normal;
+  text-align: center;
 }
 
 .container {
@@ -128,7 +131,7 @@ h3 {
 .button {
   box-sizing: content-box;
   padding: 20px 30px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
   color: #fff;
   border-radius: 5px;
   text-transform: uppercase;
@@ -245,6 +248,7 @@ h3 {
 .hero-section .form-button {
   width: 100%;
   height: 17px;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #34c176;
   border: none;
 }
@@ -262,7 +266,6 @@ h3 {
 }
 .pricing-container h2 {
   margin-bottom: 48px;
-  text-align: center;
 }
 .pricing-container .pricing-description {
   margin: 0;
@@ -353,25 +356,23 @@ h3 {
     margin-bottom: 50px;
   }
 }
-h3 {
+.news-container {
+  padding-top: 100px;
+}
+.news-container h3 {
   margin-bottom: 30px;
   font-size: 30px;
 }
 @media (max-width: 414.98px) {
-  h3 {
+  .news-container h3 {
     margin-bottom: 16px;
     font-size: 16px;
   }
 }
-
-p {
+.news-container p {
   margin-top: 0;
   margin-bottom: 24px;
   color: #cacaca;
-}
-
-.news-container {
-  padding-top: 100px;
 }
 .news-container .page-news-title {
   margin-bottom: 3rem;
@@ -453,5 +454,57 @@ p {
   }
   .news-list .news-item .news-img {
     margin-bottom: 50px;
+  }
+}
+.app-container {
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+.app-container h2 {
+  margin-bottom: 3rem;
+}
+
+.app-description {
+  display: flex;
+  -moz-column-gap: 144px;
+       column-gap: 144px;
+}
+.app-description-left {
+  max-width: 600px;
+}
+.app-description-text {
+  color: #cacaca;
+}
+.app-description-img {
+  max-height: 278px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.button-app {
+  display: inline-block;
+  padding: 17px 40px;
+  font-size: 12.8px;
+  line-height: 19px;
+  background-color: #95390c;
+  border: none;
+  border-radius: 2rem;
+  text-decoration: none;
+  text-transform: none;
+}
+
+@media (max-width: 1086px) {
+  .app-description {
+    -moz-column-gap: 44px;
+         column-gap: 44px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 786px) {
+  .app-description {
+    flex-direction: column-reverse;
+  }
+  .app-description-left {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=app.css.map */

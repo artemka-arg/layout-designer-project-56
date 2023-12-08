@@ -1,21 +1,21 @@
-h3 {
-  margin-bottom: 30px;
-  font-size: 30px;
-
-  @media (max-width: 414.98px) {
-    margin-bottom: 16px;
-    font-size: 16px;
-  }
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 24px;
-  color: $text-color;
-}
-
 .news-container {
   padding-top: 100px;
+
+  h3 {
+    margin-bottom: 30px;
+    font-size: 30px;
+  
+    @media (max-width: 414.98px) {
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: $text-color;
+  }
 
   .page-news-title {
     margin-bottom: 3rem;
