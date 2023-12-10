@@ -86,21 +86,29 @@
   background-size: cover;
 }
 
-@media (max-width: 414.98px) {
+
+@media (max-width: 1000px) {
   .pricing-list {
-    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 50px;
+  }
+}
 
-    .pricing-item {
-      padding-top: 16px;
+@media (max-width: 660px) {
+  .pricing-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
 
-      h3 {
-        font-weight: bold;
-        font-size: 16px;
-      }
+@media (max-width: 414px) {
+  .pricing-list .pricing-item {
+    padding-top: 16px;
 
-      &:not(:last-child) {
-        margin-bottom: 50px;
-      }
+    h3 {
+      font-weight: bold;
+      font-size: 16px;
     }
   }
 }

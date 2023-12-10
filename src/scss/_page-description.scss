@@ -1,19 +1,15 @@
-.description-section {
-  background-image: url('../images/banner.png');
+.hero-section {
+  background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
 }
 
 .description-container {
-  padding-top: 25px;
-  padding-bottom: 200px;
-}
-
-.hero-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 150px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 
   .hero-description {
@@ -57,9 +53,10 @@
   }
 }
 
+
 @media (max-width: 414.98px) {
-  .hero-section {
-    margin-top: 78px;
+  .description-container {
+    padding-top: 248px;
 
     .hero-description {
       margin-top: 16px;
