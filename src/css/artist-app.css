@@ -385,4 +385,55 @@ a {
   .hero-container {
     padding-top: 225px;
   }
+}
+.popular-tracks-container {
+  padding-top: 100px;
+}
+.popular-tracks-container h2 {
+  margin-bottom: 3rem;
+}
+
+.track-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 25px;
+}
+.track-list .popular-track {
+  display: flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  align-items: center;
+}
+.track-list .popular-track .track-img {
+  width: 55px;
+  height: 55px;
+}
+.track-list .popular-track .track-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.track-list .popular-track .track-info .track-name {
+  font-weight: bold;
+  font-size: 12.8px;
+  text-transform: uppercase;
+}
+.track-list .popular-track .track-info .track-artist {
+  display: block;
+  font-size: 12.8px;
+  color: #e0e0e0;
+}
+.track-list .popular-track .track-info .track-time {
+  font-size: 12.8px;
+  color: #e0e0e0;
+}
+
+@media (max-width: 600px) {
+  .track-list {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=artist-app.css.map */
