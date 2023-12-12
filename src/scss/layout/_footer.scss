@@ -60,6 +60,9 @@
 }
 
 .footer-line {
+  box-sizing: border-box;
+  height: 2px;
+  background-color: $text-color;
   border: 1px solid $text-color;
 }
 
@@ -71,7 +74,7 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 16px;
-    padding-bottom: 1rem;
+    padding-bottom: 17px;
   }
 
   &-link {
@@ -114,5 +117,6 @@
   .footer-bottom-list {
     flex-direction: column;
     row-gap: 16px;
+    padding-bottom: 16px;
   }
 }

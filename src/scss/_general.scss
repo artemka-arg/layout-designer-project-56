@@ -103,6 +103,16 @@ a {
   background-color: $red;
 }
 
+@media (max-width: 740px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
 @media (max-width: 480px) {
   h1 {
     font-size: 30px;

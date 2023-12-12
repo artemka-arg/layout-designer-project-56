@@ -101,6 +101,14 @@ a {
   background-color: #95390c;
 }
 
+@media (max-width: 740px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+}
 @media (max-width: 480px) {
   h1 {
     font-size: 30px;
@@ -289,6 +297,9 @@ a {
 }
 
 .footer-line {
+  box-sizing: border-box;
+  height: 2px;
+  background-color: #cacaca;
   border: 1px solid #cacaca;
 }
 
@@ -301,7 +312,7 @@ a {
   flex-wrap: wrap;
   -moz-column-gap: 16px;
        column-gap: 16px;
-  padding-bottom: 1rem;
+  padding-bottom: 17px;
 }
 .footer-bottom-link {
   font-size: 16px;
@@ -337,6 +348,7 @@ a {
   .footer-bottom-list {
     flex-direction: column;
     row-gap: 16px;
+    padding-bottom: 16px;
   }
 }
 .hero-section {

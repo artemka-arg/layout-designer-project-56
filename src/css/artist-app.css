@@ -100,6 +100,14 @@ a {
   background-color: #95390c;
 }
 
+@media (max-width: 740px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+}
 @media (max-width: 480px) {
   h1 {
     font-size: 30px;
@@ -288,6 +296,9 @@ a {
 }
 
 .footer-line {
+  box-sizing: border-box;
+  height: 2px;
+  background-color: #cacaca;
   border: 1px solid #cacaca;
 }
 
@@ -300,7 +311,7 @@ a {
   flex-wrap: wrap;
   -moz-column-gap: 16px;
        column-gap: 16px;
-  padding-bottom: 1rem;
+  padding-bottom: 17px;
 }
 .footer-bottom-link {
   font-size: 16px;
@@ -336,6 +347,7 @@ a {
   .footer-bottom-list {
     flex-direction: column;
     row-gap: 16px;
+    padding-bottom: 16px;
   }
 }
 .logo-text {
@@ -506,5 +518,81 @@ a {
   }
   .w-138 {
     width: 138px;
+  }
+}
+.similar-container {
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+.similar-container h2 {
+  margin-bottom: 48px;
+}
+.similar-container h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.similar-container p {
+  display: inline-block;
+  margin-top: 1px;
+  margin-bottom: 0;
+  color: #e0e0e0;
+}
+.similar-container span {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.similar-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 25px;
+  padding-right: 50px;
+}
+@media (max-width: 1190px) {
+  .similar-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 590px) {
+  .similar-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.similar-list .similar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 17px;
+}
+.similar-list .similar-item img {
+  max-width: 250px;
+  max-height: 250px;
+}
+@media (max-width: 890px) {
+  .similar-list .similar-item img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 740px) {
+  .similar-list .similar-item img {
+    width: 150px;
+    height: 150px;
+  }
+}
+.similar-list .similar-item .similar-info {
+  text-align: center;
+}
+
+@media (max-width: 415px) {
+  .similar-list {
+    grid-template-columns: repeat(2, min-content);
+  }
+  .similar-list .similar-item img {
+    width: 137px;
+    height: 137px;
   }
 }/*# sourceMappingURL=artist-app.css.map */
