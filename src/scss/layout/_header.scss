@@ -85,6 +85,7 @@
 
 @media (max-width: 880px) {
   .header {
+    row-gap: 10px;
     .logo {
       margin-right: auto;
     }
@@ -94,6 +95,7 @@
 @media (max-width: 480px) {
   .header {
     flex-direction: column;
+    row-gap: 0;
 
     .logo {
       margin: 0 0 17px;

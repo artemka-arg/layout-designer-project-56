@@ -192,6 +192,9 @@ a {
 }
 
 @media (max-width: 880px) {
+  .header {
+    row-gap: 10px;
+  }
   .header .logo {
     margin-right: auto;
   }
@@ -199,6 +202,7 @@ a {
 @media (max-width: 480px) {
   .header {
     flex-direction: column;
+    row-gap: 0;
   }
   .header .logo {
     margin: 0 0 17px;
@@ -435,5 +439,72 @@ a {
 @media (max-width: 600px) {
   .track-list {
     grid-template-columns: 1fr;
+  }
+}
+.discography-container {
+  padding-top: 100px;
+}
+.discography-container h2 {
+  margin-bottom: 48px;
+}
+.discography-container h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+.discography-container span {
+  display: block;
+  color: #e0e0e0;
+}
+
+.discography-list {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 25px;
+  padding-right: 50px;
+}
+@media (max-width: 1190px) {
+  .discography-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 590px) {
+  .discography-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.discography-list .discography-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+.discography-list .discography-image {
+  max-width: 250px;
+  max-height: 250px;
+}
+@media (max-width: 890px) {
+  .discography-list .discography-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 740px) {
+  .discography-list .discography-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 415px) {
+  .discography-list {
+    grid-template-columns: repeat(2, min-content);
+  }
+  .discography-list .discography-image {
+    width: 137px;
+    height: 137px;
+  }
+  .w-138 {
+    width: 138px;
   }
 }/*# sourceMappingURL=artist-app.css.map */

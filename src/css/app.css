@@ -193,6 +193,9 @@ a {
 }
 
 @media (max-width: 880px) {
+  .header {
+    row-gap: 10px;
+  }
   .header .logo {
     margin-right: auto;
   }
@@ -200,6 +203,7 @@ a {
 @media (max-width: 480px) {
   .header {
     flex-direction: column;
+    row-gap: 0;
   }
   .header .logo {
     margin: 0 0 17px;
