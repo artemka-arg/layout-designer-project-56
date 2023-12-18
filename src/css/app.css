@@ -49,6 +49,12 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+input,
+button {
+  cursor: pointer;
 }
 
 .container {
