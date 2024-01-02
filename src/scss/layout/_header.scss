@@ -83,16 +83,17 @@
   }
 }
 
-@media (max-width: 880px) {
+@media screen and (width <= 880px) {
   .header {
     row-gap: 10px;
+
     .logo {
       margin-right: auto;
     }
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (width <= 480px) {
   .header {
     flex-direction: column;
     row-gap: 0;

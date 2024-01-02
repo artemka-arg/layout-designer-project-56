@@ -37,14 +37,14 @@
   text-transform: none;
 }
 
-@media (max-width: 1086px) {
+@media screen and (width <= 1086px) {
   .app-description {
     column-gap: 44px;
     justify-content: space-between;
   }
 }
 
-@media (max-width: 786px) {
+@media screen and (width <= 786px) {
   .app-description {
     flex-direction: column-reverse;
 
